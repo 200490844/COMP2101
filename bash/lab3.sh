@@ -16,10 +16,7 @@ if curl --version | grep -q '.'; then
 else
     sudo apt install curl
     echo "STATUS --------------- INSTALLATION COMPLETE - CURL"
-fi
-
-# Getting access to lxd
-sudo usermod -a -G lxd student
+fis
 
 
 # 2. Creating Container
