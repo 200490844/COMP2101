@@ -16,7 +16,7 @@ if curl --version | grep -q '.'; then
 else
     sudo apt install curl
     echo "STATUS --------------- INSTALLATION COMPLETE - CURL"
-fis
+fi
 
 
 # 2. Creating Container
@@ -64,5 +64,5 @@ fi
 if grep -q "COMP2101-S22" /etc/hosts; then
     echo "STATUS --------------- HOST ALREADY EXISTS"
 else
-    echo "$containerIP COMP2101-S22" >> /etc/hosts
+    sudo echo "$containerIP COMP2101-S22" >> /etc/hosts
 fi
